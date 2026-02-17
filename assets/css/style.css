@@ -58,6 +58,8 @@ img, video{
   backdrop-filter: blur(6px);
 }
 
+.topbar a{padding: 0 30px 0;}
+
 .topbar-inner{
   display: flex;
   align-items: center;
