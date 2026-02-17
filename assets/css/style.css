@@ -10,10 +10,10 @@
   --shadow: 0 8px 24px rgba(0,0,0,0.10);
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
   --radius: 28px;
-  --max: 1100px;
+  --max: 1000px;
 }
 
-* { box-sizing: border-box; }
+* {box-sizing: border-box;}
 
 html, body { height: 100%; }
 
@@ -54,7 +54,6 @@ img, video{
   z-index: 5;
   background: rgba(233,228,219,0.90);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--rule);
 }
 
 .topbar-inner{
@@ -134,13 +133,13 @@ img, video{
 
 .hero p{
   margin: 0 0 12px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--muted);
   max-width: 520px;
 }
 
 .hero .small-link{
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
 }
 
@@ -151,10 +150,30 @@ img, video{
 
 .hero-img{
   width: min(520px, 92vw);
-  border-radius: 38px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  background: #d7d0c6;
+  background: transparent;
+  overflow: visible;
+}
+
+.hero-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+
+  -webkit-mask-image:
+    radial-gradient(circle at 50% 34%, #000 64%, transparent 63%),
+    radial-gradient(circle at 50% 66%, #000 64%, transparent 63%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center;
+
+  mask-image:
+    radial-gradient(circle at 50% 34%, #000000 64%, transparent 63%),
+    radial-gradient(circle at 50% 66%, #000 64%, transparent 63%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-position: center;
 }
 
 /* =========================================
@@ -168,7 +187,7 @@ img, video{
 .footer-links .links{
   margin: 0 auto;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .footer-links .links a{
