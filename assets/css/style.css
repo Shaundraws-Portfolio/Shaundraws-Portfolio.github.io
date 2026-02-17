@@ -4,26 +4,30 @@
 
 :root{
   --bg: #e9e4db;
-  --ink: #2b2b2b;
-  --muted: #5a5a5a;
+  --ink: #ffffff;
+  --muted: #ffffffe0;
   --rule: rgba(0,0,0,0.15);
   --shadow: 0 8px 24px rgba(0,0,0,0.10);
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
   --radius: 28px;
-  --max: 1000px;
+  --max: 1500px;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  font-size: 40px;
+  }
 
 html, body { height: 100%; }
 
 body{
   margin: 0;
-  background: var(--bg);
+  background: url("../img/background.png") center center / cover no-repeat fixed;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.45;
 }
+
 
 a{
   color: inherit;
@@ -52,7 +56,6 @@ img, video{
   position: sticky;
   top: 0;
   z-index: 5;
-  background: rgba(233,228,219,0.90);
   backdrop-filter: blur(6px);
 }
 
@@ -64,12 +67,10 @@ img, video{
 }
 
 .brand{
-  font-size: 22px;
   font-weight: 700;
 }
 
 .nav a{
-  font-size: 14px;
 }
 
 /* Soft shadow strip like your screenshots */
@@ -101,7 +102,7 @@ img, video{
   text-align: center;
 }
 
-.spacer-xl{ height: 70px; }
+.spacer-xl{height: 200px;}
 .spacer-lg{ height: 48px; }
 .spacer-md{ height: 28px; }
 
@@ -109,7 +110,6 @@ img, video{
   max-width: 700px;
   margin: 10px auto 0;
   color: var(--muted);
-  font-size: 14px;
 }
 
 /* =========================================
@@ -126,20 +126,17 @@ img, video{
 
 .hero h1{
   margin: 0 0 14px;
-  font-size: clamp(32px, 4vw, 48px);
   font-style: italic;
   letter-spacing: 0.2px;
 }
 
 .hero p{
   margin: 0 0 12px;
-  font-size: 16px;
   color: var(--muted);
-  max-width: 520px;
+  /* max-width: 520px; */
 }
 
 .hero .small-link{
-  font-size: 16px;
   color: var(--muted);
 }
 
@@ -149,7 +146,7 @@ img, video{
 }
 
 .hero-img{
-  width: min(520px, 92vw);
+  width: 700px;
   background: transparent;
   overflow: visible;
 }
@@ -182,16 +179,15 @@ img, video{
 
 .footer-links{
   padding: 30px 0 60px;
+  word-spacing: 275px;
 }
 
 .footer-links .links{
   margin: 0 auto;
   text-align: left;
-  font-size: 18px;
 }
 
 .footer-links .links a{
-  display: block;
   margin: 10px 0;
 }
 
@@ -204,7 +200,6 @@ img, video{
 }
 
 .category-title{
-  font-size: 20px;
   color: var(--muted);
   margin: 0 0 18px;
 }
@@ -231,7 +226,6 @@ img, video{
 
 .view-project{
   margin-top: 14px;
-  font-size: 16px;
   color: var(--muted);
 }
 
@@ -285,13 +279,11 @@ img, video{
 
 .video-title{
   margin: 0 0 10px;
-  font-size: 14px;
   color: var(--ink);
 }
 
 .video-note{
   margin: 0 0 16px;
-  font-size: 13px;
   color: var(--muted);
 }
 
@@ -325,13 +317,11 @@ img, video{
 
 .page-lead h2{
   margin: 0 0 10px;
-  font-size: 14px;
   color: var(--muted);
   font-weight: 400;
 }
 
 .page-lead p{
   margin: 0;
-  font-size: 13px;
   color: var(--muted);
 }
