@@ -204,7 +204,7 @@ img, video{
 }
 
 .category-title{
-  font-size: 14px;
+  font-size: 20px;
   color: var(--muted);
   margin: 0 0 18px;
 }
@@ -214,9 +214,7 @@ img, video{
   margin: 0 auto;
   border-radius: 999px; /* makes oval */
   overflow: hidden;
-  background: #ffffff;
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0,0,0,0.06);
 }
 
 .category-thumb.circle{
@@ -233,7 +231,7 @@ img, video{
 
 .view-project{
   margin-top: 14px;
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
 }
 
