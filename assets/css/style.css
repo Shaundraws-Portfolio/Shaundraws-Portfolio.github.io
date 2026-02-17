@@ -67,6 +67,7 @@ img, video{
 
 .brand{
   font-weight: 700;
+  text-decoration: none;
 }
 
 .nav a{
